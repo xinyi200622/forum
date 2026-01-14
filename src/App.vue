@@ -8,10 +8,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import '../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css'
+import '../bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js'
 import ColumnList, { ColumnProps } from './components/ColumnList.vue'
 import GlobalHeader, { UserProps } from './components/GlobalHeader.vue'
 const currentUser: UserProps = {
-  isLogin: false
+  isLogin: true,
+  name: 'viking'
 }
 const testData: ColumnProps[] = [
   {
@@ -61,6 +63,5 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

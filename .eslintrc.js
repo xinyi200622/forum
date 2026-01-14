@@ -1,5 +1,10 @@
 module.exports = {
   root: true,
+  ignorePatterns: [
+    // 精准排除 Bootstrap 文件
+    '**/bootstrap.min.js',
+    'node_modules/bootstrap/**/*.js'
+  ],
   env: {
     node: true
   },
